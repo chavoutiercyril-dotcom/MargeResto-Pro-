@@ -1,0 +1,22 @@
+{
+  "name": "margeresto-commercial",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "node --check src/main.js && node --check public/app.js && node --check netlify/functions/create-checkout.mjs && node --check netlify/functions/create-portal.mjs && node --check netlify/functions/stripe-webhook.mjs && node --check netlify/functions/admin-stats.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.0",
+    "stripe": "^18.5.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

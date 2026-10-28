@@ -1,0 +1,21 @@
+MARGERESTO — VERSION COMMERCIALE — GUIDE COURT
+
+OFFRE
+14 jours gratuits sans carte bancaire, puis 19 euros HT par mois si le client s'abonne.
+Le client ne sera pas débité à la fin de l'essai tant qu'il n'aura pas souscrit.
+
+POUR ACTIVER LES PAIEMENTS
+1. Créez un projet sur https://supabase.com.
+2. Exécutez le script sql/01_supabase_setup.sql dans Supabase > SQL Editor.
+3. Créez un compte Stripe sur https://dashboard.stripe.com, puis un prix mensuel de 19 euros HT.
+4. Transférez le contenu décompressé de ce ZIP dans un dépôt GitHub PRIVE.
+5. Dans Netlify, reliez le dépôt GitHub à votre site existant marge-resto.netlify.app.
+6. Configurez les 7 variables d'environnement listées dans README_DEMARRAGE.md.
+7. Déployez, puis configurez le webhook Stripe.
+8. Testez tout en mode TEST de Stripe AVANT d'encaisser vos premiers clients.
+
+IMPORTANT : ne pas simplement déposer ce ZIP sur Netlify Drop comme la première version :
+la version payante contient des fonctions serveur, qui doivent être correctement construites et déployées.
+
+GUIDE DETAILLE : README_DEMARRAGE.md
+Le code est un projet à configurer, pas un système de paiement déjà activé.
